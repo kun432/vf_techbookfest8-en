@@ -25,7 +25,7 @@ Next, create a project like the following on the Voiceflow side and place the bl
 - The Speak block should be set as follows.
 
 //list[][]{
-Welcome to my home recipe skills. In this skill, I'll randomly give you a recommended recipe. Today's recommendation is <audio src="soundbank://soundlibrary/ui/gameshow/amzn\fr_ui\fr_sfx_gameshow\fr_intro}01"/>
+Welcome to my home recipe skills. In this skill, I'll randomly give you a recommended recipe. Today's recommendation is <audio src="soundbank://soundlibrary/ui/gameshow/amzn\_ui\_sfx_gameshow\_intro\_01"/>
 //}
 
 By the way, the last part of the ```<audio src=~``` is to play the sound effects using the Alexa Skills Kit sound library.
@@ -242,7 +242,7 @@ If you go back to the Choice block setting screen, the sample utterance ```slot_
 
 ![](images/chapxx-kun432/s114.png)
 
-If the sample speech is displayed under the input field, the sample speech has been registered. I will continue to add variations on the sample utterances. Type ```slot_recipe_name``` tell me the recipe for ```slot_recipe_name```.
+If the sample speech is displayed under the input field, the sample speech has been registered. I will continue to add variations on the sample utterances. Type ```tell me the recipe for slot_recipe_name```.
 
 ![](images/chapxx-kun432/s115.png)
 
@@ -297,7 +297,7 @@ You are now ready to receive the utterances of users who are search criteria. No
 
 ![](images/chapxx-kun432/s080.png)
 
-For random, I selected "Row Number" on the left and left "Value to Match" empty on the right. You can do this as follows, with ```recipe_name`` on the left and ```{slot_recipe_name}``` on the right. Now you can search the "recipe\_name" column by specifying the variable ```slot_recipe_name```. Click "Next".
+For random, I selected "Row Number" on the left and left "Value to Match" empty on the right. You can do this as follows, with ```recipe_name``` on the left and ```{slot_recipe_name}``` on the right. Now you can search the "recipe\_name" column by specifying the variable ```slot_recipe_name```. Click "Next".
 
 ![](images/chapxx-kun432/s082.png)
 
